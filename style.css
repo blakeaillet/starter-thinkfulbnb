@@ -54,14 +54,18 @@ main img {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 5px 20px;
   text-align: center;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 45px;
   color: #fff;
+}
+
+ul{
+  padding-inline-start: 0;
 }
 
 header nav ul li {
@@ -71,7 +75,7 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 0 20px 0 0;
+  padding: 0 10px 0 10px;
 }
 
 header nav ul li a:hover {
@@ -79,10 +83,25 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+header div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* -------  Search Form ------- */
 form {
+  font-size: 20px;
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form div{
+  display: flex;
+  justify-content: space-between;
+  margin: 11px;
 }
 
 form label {
@@ -92,7 +111,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 160px;
 }
 
 form button {
@@ -102,6 +121,10 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+}
+
+section ul{
+  padding-left: 40px;
 }
 
 /* -------  Footer ------- */
@@ -117,3 +140,71 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 0;
+  }
+
+  ul{
+    padding-top: 8px;
+  }
+
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+  }
+
+  form input, form select{
+    margin-bottom: 0;
+  }
+
+  form label{
+    padding-right: 5px;
+  }
+
+  form div{
+    flex: 1;
+    margin: 10px;
+    width: 100%;
+    justify-content: none;
+  }
+  
+  .about{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-split{
+    flex-direction: row;
+    flex: 1;
+    padding: 10px;
+  }
+
+  .about-split-p{
+    flex: 2;
+    align-self: center;
+    font-weight: normal;
+  }
+  
+  .about-p{
+    font-size: 15px;
+  }
+
+  .ideas-img{
+    flex: 1;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .host-text{
+    padding-top: 50px;
+  }
+  
+}
