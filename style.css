@@ -145,12 +145,12 @@ footer p {
 @media all and (min-width: 480px) {
   /* --- header ---*/
   header {
-    display: flex;
     justify-content: space-between;
   }
 
   header nav {
     padding-top: 10px;
+    
   }
 
   /* --- form ---*/
@@ -164,6 +164,7 @@ footer p {
   form div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .group {
@@ -177,4 +178,10 @@ footer p {
   .item-double {
     padding: 20px;
   }
+
+  form select,
+form input {
+  margin-bottom: 0px;
+  width: 180px;
+}
 }
