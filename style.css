@@ -145,6 +145,7 @@ footer p {
 @media all and (min-width: 480px) {
   /* --- header ---*/
   header {
+    display: flex;
     justify-content: space-between;
   }
 
