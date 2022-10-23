@@ -147,11 +147,12 @@ footer p {
   header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding:15px;
   }
 
-  header nav {
-    padding-top: 10px;
-    
+  .logo {
+    font-size: 36px;
   }
 
   /* --- form ---*/
@@ -162,10 +163,15 @@ footer p {
     flex-wrap: wrap;
   }
 
+  input{
+    width: 100%;
+  }
+
   form div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 15%;
   }
 
   .group {
@@ -183,6 +189,13 @@ footer p {
   form select,
 form input {
   margin-bottom: 0px;
-  width: 180px;
+  max-width: 180px;
+  width: 100%;
 }
+
+form button{
+  font-size:16px;
+  padding:10px;
+}
+
 }
